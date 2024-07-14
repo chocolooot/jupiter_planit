@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on darwin)" generated="20240715 03:41:04.064" rpa="false" schemaversion="4">
+<suite id="s1" name="Jupiter Planit" source="/Users/louisantonsaclot/Desktop/jupiter_planit">
+<suite id="s1-s1" name="Tests" source="/Users/louisantonsaclot/Desktop/jupiter_planit/Tests">
+<suite id="s1-s1-s1" name="RegressionJupiterToys" source="/Users/louisantonsaclot/Desktop/jupiter_planit/Tests/RegressionJupiterToys">
+<suite id="s1-s1-s1-s1" name="contact TS001" source="/Users/louisantonsaclot/Desktop/jupiter_planit/Tests/RegressionJupiterToys/contact_TS001.robot">
+<test id="s1-s1-s1-s1-t1" name="TC01 - User Can Validate Error Messages" line="8">
+<kw name="GIVEN User Navigate To Jupiter Page">
+<kw name="User Goes To Jupiter Site" library="landingPageFunc">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${environment}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240715 03:41:04.138" level="INFO">Opening browser 'chrome' to base url 'https://jupiter.cloud.planittesting.com/#/'.</msg>
+<status status="PASS" starttime="20240715 03:41:04.137" endtime="20240715 03:41:07.229"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240715 03:41:07.229" endtime="20240715 03:41:07.690"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:07.691" endtime="20240715 03:41:07.712"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:04.137" endtime="20240715 03:41:07.712"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:04.137" endtime="20240715 03:41:07.712"/>
+</kw>
+<kw name="WHEN User In Contact Page">
+<kw name="User Is In Jupiter Landing Page" library="landingPageFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:07.713" endtime="20240715 03:41:07.724"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterHeader}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:07.735" level="INFO">Element 'Xpath=//div[@class='hero-unit']//h1[text()='Jupiter Toys']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:07.724" endtime="20240715 03:41:07.735"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterDesc}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:07.745" level="INFO">Element 'Xpath=//p//small[@class='muted']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:07.735" endtime="20240715 03:41:07.745"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmShopBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:07.755" level="INFO">Element 'Xpath=//p//a[text()='Start Shopping »']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:07.746" endtime="20240715 03:41:07.755"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmHdr}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:07.763" level="INFO">Element 'Xpath=//p[contains(., 'Welcome')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:07.755" endtime="20240715 03:41:07.764"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmDesc}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:07.772" level="INFO">Element 'Xpath=//p[contains(., 'incididunt ut')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:07.764" endtime="20240715 03:41:07.773"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:07.713" endtime="20240715 03:41:07.773"/>
+</kw>
+<kw name="Select Page" library="landingPageFunc">
+<arg>Contact</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:07.773" endtime="20240715 03:41:07.782"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:07.782" level="INFO">Clicking element 'Xpath=//div//ul//li//a[text()='Contact']'.</msg>
+<status status="PASS" starttime="20240715 03:41:07.782" endtime="20240715 03:41:07.808"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:07.773" endtime="20240715 03:41:07.808"/>
+</kw>
+<kw name="User Is In Contact Page" library="contactFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactBannerMsg}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:07.808" endtime="20240715 03:41:08.030"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactForeName}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:08.045" level="INFO">Element 'Xpath=//div//input[@id='forename']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:08.030" endtime="20240715 03:41:08.045"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactMessage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:08.058" level="INFO">Element 'Xpath=//div//textarea[@id='message']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:08.046" endtime="20240715 03:41:08.058"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactSubmitBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:08.068" level="INFO">Element 'Xpath=//div//a[text()='Submit']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:08.058" endtime="20240715 03:41:08.069"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:07.808" endtime="20240715 03:41:08.069"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:07.712" endtime="20240715 03:41:08.069"/>
+</kw>
+<kw name="THEN User Should Be Able To Complete Required Fields">
+<kw name="User Validate Contact Fields" library="contactFunc">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactSubmitBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:08.070" level="INFO">Clicking element 'Xpath=//div//a[text()='Submit']'.</msg>
+<status status="PASS" starttime="20240715 03:41:08.069" endtime="20240715 03:41:08.100"/>
+</kw>
+<kw name="Error Message Should Be Existing" library="contactFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactGenErrorMsg}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:08.101" endtime="20240715 03:41:08.110"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactForeReqrdMsg}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:08.121" level="INFO">Element 'Xpath=//span[@id='forename-err']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:08.111" endtime="20240715 03:41:08.121"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactEmailReqrdMsg}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:08.131" level="INFO">Element 'Xpath=//span[@id='email-err']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:08.121" endtime="20240715 03:41:08.131"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactMessgReqrdMsg}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:08.140" level="INFO">Element 'Xpath=//span[@id='message-err']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:08.131" endtime="20240715 03:41:08.140"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:08.100" endtime="20240715 03:41:08.141"/>
+</kw>
+<kw name="User Submit Feedback" library="contactFunc">
+<kw name="User Input Contact Fields" library="contactFunc">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactForeName}</arg>
+<arg>${foreNameVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:08.141" level="INFO">Typing text 'Anton' into text field 'Xpath=//div//input[@id='forename']'.</msg>
+<status status="PASS" starttime="20240715 03:41:08.141" endtime="20240715 03:41:08.229"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactSurname}</arg>
+<arg>${surNameVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:08.230" level="INFO">Typing text 'Automated' into text field 'Xpath=//div//input[@id='surname']'.</msg>
+<status status="PASS" starttime="20240715 03:41:08.229" endtime="20240715 03:41:08.266"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactEmail}</arg>
+<arg>${foreNameVal}+${emailVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:08.267" level="INFO">Typing text 'Anton+@value.com' into text field 'Xpath=//div//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240715 03:41:08.266" endtime="20240715 03:41:08.303"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactMessage}</arg>
+<arg>${messageVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:08.304" level="INFO">Typing text 'This is a Message' into text field 'Xpath=//div//textarea[@id='message']'.</msg>
+<status status="PASS" starttime="20240715 03:41:08.303" endtime="20240715 03:41:08.336"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:08.141" endtime="20240715 03:41:08.337"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactSubmitBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:08.337" level="INFO">Clicking element 'Xpath=//div//a[text()='Submit']'.</msg>
+<status status="PASS" starttime="20240715 03:41:08.337" endtime="20240715 03:41:08.356"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactSendingHdr}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:08.356" endtime="20240715 03:41:08.365"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:18.368" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:08.365" endtime="20240715 03:41:18.369"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactSuccessMsg}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:18.369" endtime="20240715 03:41:23.061"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactBackBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.062" level="INFO">Clicking element 'Xpath=//a[contains(., 'Back')]'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.061" endtime="20240715 03:41:23.410"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.411" level="INFO">Clicking element 'Xpath=//div//a[2][text()='Jupiter Toys']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.410" endtime="20240715 03:41:23.454"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:08.141" endtime="20240715 03:41:23.454"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:08.069" endtime="20240715 03:41:23.454"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:08.069" endtime="20240715 03:41:23.454"/>
+</kw>
+<tag>verify</tag>
+<status status="PASS" starttime="20240715 03:41:04.137" endtime="20240715 03:41:23.454"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="TC02 - User Can Send Feedback Form" line="14">
+<kw name="GIVEN User In Contact Page">
+<kw name="User Is In Jupiter Landing Page" library="landingPageFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:23.456" endtime="20240715 03:41:23.465"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterHeader}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.473" level="INFO">Element 'Xpath=//div[@class='hero-unit']//h1[text()='Jupiter Toys']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.465" endtime="20240715 03:41:23.473"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterDesc}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.481" level="INFO">Element 'Xpath=//p//small[@class='muted']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.473" endtime="20240715 03:41:23.481"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmShopBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.489" level="INFO">Element 'Xpath=//p//a[text()='Start Shopping »']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.481" endtime="20240715 03:41:23.489"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmHdr}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.497" level="INFO">Element 'Xpath=//p[contains(., 'Welcome')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.489" endtime="20240715 03:41:23.497"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmDesc}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.504" level="INFO">Element 'Xpath=//p[contains(., 'incididunt ut')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.497" endtime="20240715 03:41:23.504"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.456" endtime="20240715 03:41:23.504"/>
+</kw>
+<kw name="Select Page" library="landingPageFunc">
+<arg>Contact</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:23.504" endtime="20240715 03:41:23.512"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.513" level="INFO">Clicking element 'Xpath=//div//ul//li//a[text()='Contact']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.512" endtime="20240715 03:41:23.532"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.504" endtime="20240715 03:41:23.532"/>
+</kw>
+<kw name="User Is In Contact Page" library="contactFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactBannerMsg}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:23.533" endtime="20240715 03:41:23.540"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactForeName}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.547" level="INFO">Element 'Xpath=//div//input[@id='forename']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.540" endtime="20240715 03:41:23.547"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactMessage}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.555" level="INFO">Element 'Xpath=//div//textarea[@id='message']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.547" endtime="20240715 03:41:23.555"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${contactSubmitBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:23.563" level="INFO">Element 'Xpath=//div//a[text()='Submit']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:23.555" endtime="20240715 03:41:23.563"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.532" endtime="20240715 03:41:23.563"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.455" endtime="20240715 03:41:23.563"/>
+</kw>
+<kw name="WHEN User Should Be Able To Submit Feedback Form">
+<kw name="User Submit Feedback" library="contactFunc">
+<kw name="User Input Contact Fields" library="contactFunc">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactForeName}</arg>
+<arg>${foreNameVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.564" level="INFO">Typing text 'Anton' into text field 'Xpath=//div//input[@id='forename']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.563" endtime="20240715 03:41:23.597"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactSurname}</arg>
+<arg>${surNameVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.598" level="INFO">Typing text 'Automated' into text field 'Xpath=//div//input[@id='surname']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.598" endtime="20240715 03:41:23.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactEmail}</arg>
+<arg>${foreNameVal}+${emailVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.631" level="INFO">Typing text 'Anton+@value.com' into text field 'Xpath=//div//input[@id='email']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.631" endtime="20240715 03:41:23.667"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${contactMessage}</arg>
+<arg>${messageVal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.668" level="INFO">Typing text 'This is a Message' into text field 'Xpath=//div//textarea[@id='message']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.667" endtime="20240715 03:41:23.700"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.563" endtime="20240715 03:41:23.700"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactSubmitBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:23.701" level="INFO">Clicking element 'Xpath=//div//a[text()='Submit']'.</msg>
+<status status="PASS" starttime="20240715 03:41:23.701" endtime="20240715 03:41:23.721"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactSendingHdr}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:23.721" endtime="20240715 03:41:23.729"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:33.730" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:23.729" endtime="20240715 03:41:33.731"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${contactSuccessMsg}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:33.731" endtime="20240715 03:41:33.753"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactBackBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:33.754" level="INFO">Clicking element 'Xpath=//a[contains(., 'Back')]'.</msg>
+<status status="PASS" starttime="20240715 03:41:33.753" endtime="20240715 03:41:33.786"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:33.787" level="INFO">Clicking element 'Xpath=//div//a[2][text()='Jupiter Toys']'.</msg>
+<status status="PASS" starttime="20240715 03:41:33.786" endtime="20240715 03:41:33.811"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.563" endtime="20240715 03:41:33.811"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:23.563" endtime="20240715 03:41:33.811"/>
+</kw>
+<kw name="THEN User Should Be Able To Close Browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240715 03:41:33.812" endtime="20240715 03:41:33.890"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:33.812" endtime="20240715 03:41:33.890"/>
+</kw>
+<tag>verify</tag>
+<status status="PASS" starttime="20240715 03:41:23.455" endtime="20240715 03:41:33.890"/>
+</test>
+<doc>Jupiter Contact Regression Suite
+File Version 1.0</doc>
+<status status="PASS" starttime="20240715 03:41:04.077" endtime="20240715 03:41:33.891"/>
+</suite>
+<suite id="s1-s1-s1-s2" name="shop TS001" source="/Users/louisantonsaclot/Desktop/jupiter_planit/Tests/RegressionJupiterToys/shop_TS001.robot">
+<test id="s1-s1-s1-s2-t1" name="TC01 - User Can Validate Product Value" line="9">
+<kw name="GIVEN User Navigate To Jupiter Page">
+<kw name="User Goes To Jupiter Site" library="landingPageFunc">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${environment}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240715 03:41:33.900" level="INFO">Opening browser 'chrome' to base url 'https://jupiter.cloud.planittesting.com/#/'.</msg>
+<status status="PASS" starttime="20240715 03:41:33.900" endtime="20240715 03:41:37.066"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240715 03:41:37.066" endtime="20240715 03:41:37.526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:37.526" endtime="20240715 03:41:37.546"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:33.899" endtime="20240715 03:41:37.546"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:33.899" endtime="20240715 03:41:37.547"/>
+</kw>
+<kw name="WHEN User In Shop Page">
+<kw name="User Is In Jupiter Landing Page" library="landingPageFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${jupiterLogo}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:37.547" endtime="20240715 03:41:37.560"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterHeader}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.571" level="INFO">Element 'Xpath=//div[@class='hero-unit']//h1[text()='Jupiter Toys']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.561" endtime="20240715 03:41:37.571"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterDesc}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.581" level="INFO">Element 'Xpath=//p//small[@class='muted']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.571" endtime="20240715 03:41:37.582"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmShopBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.591" level="INFO">Element 'Xpath=//p//a[text()='Start Shopping »']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.582" endtime="20240715 03:41:37.591"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmHdr}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.600" level="INFO">Element 'Xpath=//p[contains(., 'Welcome')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.591" endtime="20240715 03:41:37.600"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${jupiterWelcmDesc}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.609" level="INFO">Element 'Xpath=//p[contains(., 'incididunt ut')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.600" endtime="20240715 03:41:37.609"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:37.547" endtime="20240715 03:41:37.609"/>
+</kw>
+<kw name="Select Page" library="landingPageFunc">
+<arg>Shop</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:37.609" endtime="20240715 03:41:37.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:37.618" level="INFO">Clicking element 'Xpath=//div//ul//li//a[text()='Shop']'.</msg>
+<status status="PASS" starttime="20240715 03:41:37.618" endtime="20240715 03:41:37.641"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:37.609" endtime="20240715 03:41:37.641"/>
+</kw>
+<kw name="User Is In Shop Page" library="shopFunc">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${shopTeddyBear}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:41:37.642" endtime="20240715 03:41:37.862"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopStuffedFrog}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.876" level="INFO">Element 'Xpath=//h4[text()='Stuffed Frog']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.863" endtime="20240715 03:41:37.876"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopHandmadeDoll}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.888" level="INFO">Element 'Xpath=//h4[text()='Handmade Doll']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.876" endtime="20240715 03:41:37.888"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopFluffyBunny}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.898" level="INFO">Element 'Xpath=//h4[text()='Fluffy Bunny']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.888" endtime="20240715 03:41:37.899"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopSmileyBear}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.908" level="INFO">Element 'Xpath=//h4[text()='Smiley Bear']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.899" endtime="20240715 03:41:37.908"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopFunnyCow}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.917" level="INFO">Element 'Xpath=//h4[text()='Funny Cow']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.908" endtime="20240715 03:41:37.917"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopValentineBear}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.927" level="INFO">Element 'Xpath=//h4[text()='Valentine Bear']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.918" endtime="20240715 03:41:37.927"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${shopSmileyFace}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:41:37.935" level="INFO">Element 'Xpath=//h4[text()='Smiley Face']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:41:37.927" endtime="20240715 03:41:37.935"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:37.642" endtime="20240715 03:41:37.936"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:37.547" endtime="20240715 03:41:37.936"/>
+</kw>
+<kw name="THEN User Should Be Able To Verify Product Value">
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>2</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:37.936" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[2]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:37.936" endtime="20240715 03:41:37.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:40.959" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:37.958" endtime="20240715 03:41:40.959"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:37.936" endtime="20240715 03:41:40.960"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>2</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:40.964" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[2]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:40.963" endtime="20240715 03:41:41.006"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:44.008" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:41.006" endtime="20240715 03:41:44.009"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:40.961" endtime="20240715 03:41:44.010"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>4</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:44.013" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[4]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:44.012" endtime="20240715 03:41:44.052"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:47.054" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:44.053" endtime="20240715 03:41:47.055"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:44.011" endtime="20240715 03:41:47.056"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>4</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:47.059" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[4]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:47.058" endtime="20240715 03:41:47.093"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:50.094" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:47.093" endtime="20240715 03:41:50.095"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:47.057" endtime="20240715 03:41:50.096"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>4</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:50.100" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[4]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:50.098" endtime="20240715 03:41:50.134"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:53.136" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:50.134" endtime="20240715 03:41:53.137"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:50.097" endtime="20240715 03:41:53.138"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>4</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:53.141" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[4]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:53.140" endtime="20240715 03:41:53.175"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:56.177" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:53.175" endtime="20240715 03:41:56.178"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:53.139" endtime="20240715 03:41:56.179"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>4</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:56.182" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[4]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:56.181" endtime="20240715 03:41:56.216"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:41:59.217" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:56.216" endtime="20240715 03:41:59.217"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:56.179" endtime="20240715 03:41:59.218"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>7</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:41:59.222" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[7]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:41:59.220" endtime="20240715 03:41:59.263"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:42:02.265" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:41:59.263" endtime="20240715 03:42:02.266"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:59.219" endtime="20240715 03:42:02.267"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>7</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:42:02.270" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[7]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:42:02.269" endtime="20240715 03:42:02.304"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:42:05.305" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:42:02.304" endtime="20240715 03:42:05.306"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:02.268" endtime="20240715 03:42:05.307"/>
+</kw>
+<kw name="User Add To Cart Product" library="shopFunc">
+<arg>7</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div[contains(@class, 'products')]//li[${productListVal}]//div//p//a[text()='Buy']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:42:05.310" level="INFO">Clicking element 'Xpath=//div[contains(@class, 'products')]//li[7]//div//p//a[text()='Buy']'.</msg>
+<status status="PASS" starttime="20240715 03:42:05.309" endtime="20240715 03:42:05.343"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:42:08.345" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240715 03:42:05.344" endtime="20240715 03:42:08.346"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:05.308" endtime="20240715 03:42:08.347"/>
+</kw>
+<kw name="Select Page" library="landingPageFunc">
+<arg>Cart (</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:42:08.349" endtime="20240715 03:42:08.374"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Xpath=//div//ul//li//a[text()='${navPag}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240715 03:42:08.375" level="INFO">Clicking element 'Xpath=//div//ul//li//a[text()='Cart (']'.</msg>
+<status status="PASS" starttime="20240715 03:42:08.375" endtime="20240715 03:42:08.410"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:08.347" endtime="20240715 03:42:08.410"/>
+</kw>
+<kw name="User Is In Cart Page" library="cartFunc">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240715 03:42:13.412" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240715 03:42:08.410" endtime="20240715 03:42:13.413"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${cartInfoMessage}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240715 03:42:13.414" endtime="20240715 03:42:13.441"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${cartCheckOutBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.458" level="INFO">Element 'Xpath=//td//a[text()='Check Out']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.441" endtime="20240715 03:42:13.458"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${cartEmptyBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.472" level="INFO">Element 'Xpath=//td//a[text()='Empty Cart']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.458" endtime="20240715 03:42:13.472"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:08.410" endtime="20240715 03:42:13.472"/>
+</kw>
+<kw name="User Validate Product Price" library="cartFunc">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//tr[1]//td[2][text()='${frogPriceVal}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.485" level="INFO">Element 'Xpath=//tr[1]//td[2][text()='$10.99']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.473" endtime="20240715 03:42:13.485"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//tr[2]//td[2][text()='${bunnyPriceVal}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.495" level="INFO">Element 'Xpath=//tr[2]//td[2][text()='$9.99']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.485" endtime="20240715 03:42:13.495"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//tr[3]//td[2][text()='${bearPriceVal}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.505" level="INFO">Element 'Xpath=//tr[3]//td[2][text()='$14.99']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.495" endtime="20240715 03:42:13.505"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:13.473" endtime="20240715 03:42:13.505"/>
+</kw>
+<kw name="User Validate Product Subtotal" library="cartFunc">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//tr[1]//td[4][text()='${frogSubTotalVal}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.514" level="INFO">Element 'Xpath=//tr[1]//td[4][text()='$21.98']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.505" endtime="20240715 03:42:13.514"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//tr[2]//td[4][text()='${bunnySubTotalVal}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.523" level="INFO">Element 'Xpath=//tr[2]//td[4][text()='$49.95']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.514" endtime="20240715 03:42:13.523"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//tr[3]//td[4][text()='${bearSubTotalVal}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.532" level="INFO">Element 'Xpath=//tr[3]//td[4][text()='$44.97']' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.523" endtime="20240715 03:42:13.532"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:13.505" endtime="20240715 03:42:13.532"/>
+</kw>
+<kw name="User Validate Total" library="cartFunc">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>Xpath=//td//strong[contains(., '${totalVal}')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240715 03:42:13.541" level="INFO">Element 'Xpath=//td//strong[contains(., '116.9')]' is displayed.</msg>
+<status status="PASS" starttime="20240715 03:42:13.532" endtime="20240715 03:42:13.541"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:13.532" endtime="20240715 03:42:13.541"/>
+</kw>
+<status status="PASS" starttime="20240715 03:41:37.936" endtime="20240715 03:42:13.541"/>
+</kw>
+<kw name="AND User Should Be Able To Close Browser">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240715 03:42:13.542" endtime="20240715 03:42:13.620"/>
+</kw>
+<status status="PASS" starttime="20240715 03:42:13.541" endtime="20240715 03:42:13.620"/>
+</kw>
+<tag>verify</tag>
+<status status="PASS" starttime="20240715 03:41:33.899" endtime="20240715 03:42:13.620"/>
+</test>
+<doc>Jupiter Shop Regression Suite
+File Version 1.0</doc>
+<status status="PASS" starttime="20240715 03:41:33.893" endtime="20240715 03:42:13.620"/>
+</suite>
+<status status="PASS" starttime="20240715 03:41:04.075" endtime="20240715 03:42:13.621"/>
+</suite>
+<status status="PASS" starttime="20240715 03:41:04.074" endtime="20240715 03:42:13.622"/>
+</suite>
+<status status="PASS" starttime="20240715 03:41:04.066" endtime="20240715 03:42:13.623"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">verify</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Jupiter Planit">Jupiter Planit</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Tests">Jupiter Planit.Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1-s1" name="RegressionJupiterToys">Jupiter Planit.Tests.RegressionJupiterToys</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="contact TS001">Jupiter Planit.Tests.RegressionJupiterToys.contact TS001</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s2" name="shop TS001">Jupiter Planit.Tests.RegressionJupiterToys.shop TS001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
